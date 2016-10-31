@@ -135,7 +135,7 @@ const ScrollableTabBar = React.createClass({
       onPress={() => this.props.goToPage(page)}
       onLayout={this.measureTab.bind(this, page)}
     >
-      {this.renderTabName(name, page, isTabActive)}
+      {this.props.renderTabName(name, page, isTabActive)}
     </Button>;
   },
 
